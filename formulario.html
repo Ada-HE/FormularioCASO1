@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro de usuarios para una conferencia</h1>
+    
+    <form name="Conferencia de usuarios" method="post" action="/send.php">
+        Seleccione la fecha deseada:
+        <input type="date" name="Fecha" min="2023-05-22" max="2023-06-15" step="2"/><br> 
+        seleccione la hora deseada:
+        <input type="time" name="Hora" min="18:00" max="21:00" step="3600"/><br> 
+
+        <label for="Name">Ingrese nombre completo</label>
+        <input type="text" name="" value="" id=""/><br>     
+        <label for="Name">Ingrese su correo electronico</label>
+        <input type="email" name="" id=""/><br>
+        <label for="Name">Ingrese su número telefonico</label>
+        <input type="text" name="" value="" id=""/><br>
+        <p>
+            Seleccione su genero:<br>
+            <input type="checkbox" name="Hombre">Hombre<br>
+            <input type="checkbox" name="Mujer">Mujer<br>
+        <p>
+        <select>
+            <option value="Ocupación">selecciona ocupación</option>
+            <option value="Coordinado">Coordinador</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Director">Director</option>
+            <option value="Invitado">Invitado</option>
+        </select>
+        <p>
+            Seleccione su talla de camiseta:<br>
+            <input type="checkbox" name="S">S<br>
+            <input type="checkbox" name="M">M<br>
+            <input type="checkbox" name="L">L<br>
+            <input type="checkbox" name="XL">XL<br>
+        <p>
+            <p>
+                Seleccione su preferencia diatetica:<br>
+                <input type="checkbox" name="Vegetariano">Vegetariano<br>
+                <input type="checkbox" name="Vegano">Vegano<br>
+                <input type="checkbox" name="Sin gluten">Sin gluten<br>
+                <input type="checkbox" name="Sin restricciones">Sin restricciones<br>
+            <p>
+        <select>
+            <option value="Ocupación">selecciona preferencia musical</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Clasica">Clasica</option>
+            <option value="Opera">Opera</option>
+        </select>
+
+        <label for="Name">¿Qué es lo que hara en el evento?</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
